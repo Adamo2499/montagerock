@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+    
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 24px;
+    //background-image: url(../obrazy/tlo.jpg);
+    //background-repeat: round;
+	background-color: black;
+    color: white;
+    font-family: Verdana, sans-serif;
+	cursor: url(../obrazy/default.cur), default;
+}
+
+#logo_strony {
+    width: 150px;
+    height: 150px;
+}
+
+header h1 {
+	font-size: 41px;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+header #cooltext {
+	width: 965px;
+	height: 120px;
+}
+
+.text {
+    color: yellow;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.fade img:hover {
+	background-image: url(../obrazy/artysci/alesti.jpg);
+	z-index: 5;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	width: 100%
+	position: relative;
+	margin: auto;
+}
+
+header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    letter-spacing: 1px;
+    float: left;
+    text-align: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+#menu a{
+    float: left;
+    width: 200px;
+    //height: 200px;
+    background-image: url(../obrazy/menu/nuta.png);
+    margin: 0;
+    height: 10em;
+    position: relative;
+}
+
+#menu a:hover {
+    width: 200px;
+    height: 200px;
+    border: 3px solid gold;
+    transition: all .3s ease-in-out;
+	cursor: url(../obrazy/pointer.cur), pointer;
+    background-repeat: round;
+}
+
+ul a img {
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: url(../obrazy/pointer.cur), pointer;
+}
+
+#menu1:hover { 
+    background-image: url(../obrazy/menu/info.png); 
+}
+#menu2:hover {
+    background-image: url(../obrazy/menu/statystyki.jpg); 
+}
+#menu3:hover { background-image: url(../obrazy/menu/artysta.png); }
+#menu4:hover { background-image: url(../obrazy/menu/galeria.jpg); }
+#menu5:hover { background-image: url(../obrazy/menu/culttofollow.jpg); }
+#menu6:hover { background-image: url(../obrazy/menu/LogoMR.png); }
+
+.content {
+    padding: 16px;
+}
+
+.info {
+border: solid 3px red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.icon-bar a {
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+  cursor: url(../obrazy/pointer.cur), pointer;
+}
+
+#statystyki img {
+    width: 100px;
+    height: 100px;
+}
+
+#statystyki img:hover {
+    width: 900px;
+    height: 600px;
+    transition: .3s;
+	cursor: url(../obrazy/pointer.cur), pointer;
+}
+
+#statystyki ul li {
+	color: aqua;
+}
+#tlo {
+    width: 100%;
+    background-color: #f3f2f7;
+    border-radius: 15px;
+}
+footer a {
+    cursor: url(../obrazy/pointer.cur), pointer;
+}
+
+.audio[controls] {
+		cursor: url(../obrazy/default.cur), default;
+}
+.video {
+	float: left;
+	border: solid 1px white;
+    text-align: center;
+}
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+} 
+
+.album {
+	float: left;
+    margin: 25px 150px;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 32px;
+	text-decoration: underline;
+}
+
+.utwory {
+	float: left;
+    margin: 25px 10px;
+}
+
+#utwor9 {
+    margin: 25px 150px;
+}
+
+#utwor10 {
+    margin: 25px 150px;
+}
+
+#galeria img {
+    float: left;
+    margin: 25px 50px;
+    width: 200px;
+    height: 200px;
+}
+
+#up {
+position: fixed;
+bottom: 0;
+right: 0;
+width: 300px;
+z-index: 1;
+cursor: url(../obrazy/pointer.cur), pointer;
+}
+.breaker {
+    clear: both;
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/slide.css">
+        <link rel="stylesheet" href="css/webkit.css">
+        <link rel="stylesheet" href="css/jquery.tabSlideOut.css">
+        <link rel="icon" href="obrazy/favicon-16x16.png">
+        <link rel="icon" href="obrazy/favicon-32x32.png">
+	    <title>Montage Rock</title>
+    </head>
+    <body>
+          
+<audio id="audio" class="audio">
+    <source src="muzyka/dzwiek.mp3" type="audio/mpeg">
+  Twoja przeglądarka nie wspiera znacznika audio
+</audio>
+<audio id="album1" class="audio">
+    <source src="muzyka/ctl/inception.mp3" type="audio/mpeg">
+  Twoja przeglądarka nie wspiera znacznika audio
+</audio>
+
+<audio id="album2" class="audio">
+    <source src="muzyka/ctl/instrumentals.mp3" type="audio/mpeg">
+  Twoja przeglądarka nie wspiera znacznika audio
+</audio>
+
+<audio class="audio" id="wiadomosc1">
+    <source src="muzyka/powitanie1.mp3" type="audio/mpeg">
+    Twoja przeglądarka nie wspiera znacznika audio
+</audio>
+
+<audio class="audio" id="wiadomosc2">
+    <source src="muzyka/powitanie2.mp3" type="audio/mpeg">
+    Twoja przeglądarka nie wspiera znacznika audio
+</audio>
+
+<audio class="audio" id="wiadomosc3">
+    <source src="muzyka/powitanie3.mp3" type="audio/mpeg">
+    Twoja przeglądarka nie wspiera znacznika audio
+</audio>
+					
+<audio class="audio" id="wiadomosc4">
+    <source src="muzyka/powitanie4.mp3" type="audio/mpeg">
+    Twoja przeglądarka nie wspiera znacznika audio
+</audio>
+
+<audio class="audio" id="ctf1">
+    <source src="muzyka/ctl/10%20seconds%20from%20panic.mp3" type="audio/mpeg">
+</audio>
+
+<audio class="audio" id="ctf2">
+    <source src="muzyka/ctl/dead%20and%20gone.mp3" type="audio/mpeg">
+</audio>
+
+<audio class="audio" id="ctf3">
+    <source src="muzyka/ctl/down.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="ctf4">
+    <source src="muzyka/ctl/everything%20i%20never%20was.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="ctf5">
+    <source src="muzyka/ctl/leave%20it%20all%20behind.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="ctf6">
+    <source src="muzyka/lies.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="ctf7">
+    <source src="muzyka/ctl/murder%20melody.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="ctf8">
+      <source src="muzyka/ctl/perfect.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="ctf9">
+    <source src="muzyka/ctl/start%20a%20fire.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="ctf10">
+    <source src="muzyka/ctl/through%20with%20you.mp3" type="audio/mpeg">
+</audio>
+
+<audio class="audio" id="s1">
+    <source src="muzyka/slider/house%20of%20glass.mp3" type="audio/mpeg">
+</audio>        
+        
+<audio class="audio" id="s2">
+    <source src="muzyka/slider/please_dont_go.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="s3">
+    <source src="muzyka/slider/dark%20angel.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="s4">
+    <source src="muzyka/slider/shine.mp3" type="audio/mpeg">
+</audio>
+
+<audio class="audio" id="s5">
+    <source src="muzyka/slider/from%20the%20flames.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="s6">
+    <source src="muzyka/slider/end%20of%20sorrow.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="s7">
+    <source src="muzyka/slider/see%20yourself.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="s8">
+    <source src="muzyka/slider/stay%20away.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="s9">
+    <source src="muzyka/slider/against%20the%20world.mp3" type="audio/mpeg">
+</audio>
+        
+<audio class="audio" id="s10">
+    <source src="muzyka/slider/turn%20around.mp3" type="audio/mpeg">
+</audio>
+<!-- Koniec sekcji z utworami -->
+        <header id="header">
+           <!--
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+             -->
+			<img src="obrazy/logo.jpg" alt="Logo Montage Rock" id="logo_strony">
+		   <!-- https://cooltext.com/ - strona do loga -->
+		   
+           <!--<h1>Witaj na stronie poświęconej kanałowi Montage Rock</h1>-->
+		   <img src="obrazy/cooltext.gif" id="cooltext">
+            <canvas id="canvas" width="150" height="150"
+style="float: right">
+</canvas>
+           <div class="breaker"></div>
+        </header>
+        <img src="obrazy/baner.png" alt="Twoje źródło podziemnego rocka!" style="width: 100%">
+        <audio id="tlo" controls loop class="audio">
+            <source src="muzyka/lies.mp3" type="audio/mpeg">
+            Twoja przeglądarka nie wspiera znacznika audio
+        </audio>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka1.png" style="width:100%" onmouseover="s1_start()" onmouseout="s1_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka2.png" style="width:100%" onmouseover="s2_start()" onmouseout="s2_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka3.png" style="width:100%" onmouseover="s3_start()" onmouseout="s3_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka4.png" style="width:100%" onmouseover="s4_start()" onmouseout="s4_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka5.png" style="width:100%" onmouseover="s5_start()" onmouseout="s5_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka16.png" style="width:100%" onmouseover="s6_start()" onmouseout="s6_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka7.png" style="width:100%" onmouseover="s7_start()" onmouseout="s7_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka8.png" style="width:100%" onmouseover="s8_start()" onmouseout="s8_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka9.png" style="width:100%" onmouseover="s9_start()" onmouseout="s9_stop()">
+            </div>
+            <div class="mySlides fade">
+                <img src="obrazy/slider/piosenka10.png" style="width:100%" onmouseover="s10_start()" onmouseout="s10_stop()">
+            </div>
+        </div>
+        <main>
+            <h2>Menu</h2>
+			<div id="menu">
+                <a href="#podstawy" id="menu1" onclick="klik()" title="Podstawowe informacje"></a>
+                <a href="#statystyki" id="menu2" onclick="klik()" title="Statystyki"></a>
+                <a href="#artysci" id="menu3" onclick="klik()" title="Artyści"></a>
+                <div class="breaker"></div>
+                <a href="#galeria" id="menu4" onclick="klik()" title="Galeria zdjęć"></a>
+                <a href="#zespol" id="menu5" onclick="klik()" title="Ulubiony zespół"></a>
+                <a href="#special" id="menu6" onclick="klik()" title="Montage Radio"></a>
+			</div>
+            <div class="breaker"></div>
+            <div class="info" id="podstawy">
+                <h2>Podstawowe informacje</h2>
+				<p>Montage Rock jest to kanał na YouTube, który publikuje tylko muzykę, a konkretnie to wolną od praw autorskich muzykę rockową oraz metalową. Kanał działa od 2012r.</p>
+            </div>
+            <div class="info" id="statystyki">
+                <h2>Garść statystyk</h2>
+                <p>Wszystkie informacje pochodzą <a href="https://socialblade.com/youtube/user/montagerock" target="_blank">stąd</a> oraz <a href="https://www.youtube.com/user/MontageRock/about" target="_blank">stąd</a></p>
+                <a>Liczba subskrypcji: 599 186</a>
+                    <a>Liczba wyświetleń: 278 463 064</a>
+                    <a>Data założenia kanału: 11 II 2012</a>
+					<div class="video">
+						<li>Najpopularniejsze video: <br>
+							<a href="https://www.youtube.com/watch?v=wNH3UVpYSSs" target="_blank">
+								<img src="obrazy/statystyki/leave_it_all_behind.jpg">
+								<br>
+                                <small>Cult to Follow - Leave It All Behind </small>
+							</a>
+							<br>
+							(23 798 467 wyświetleń)
+						</li>
+					</div>
+					<div class="video">
+						<li>
+						Najstarsze video: 
+						<a href="https://www.youtube.com/watch?v=pru5xJAV_B0" target="_blank">
+						<br>
+						<img src="obrazy/statystyki/lipstick_lies.jpg">
+						<br>
+                            <small>Oceans Divine - Lipstick Lies</small>
+						</a>
+						<br>
+						(9 XII 2012)
+						</li>
+					</div>
+					<div class="video">
+						<li>
+							Najnowsze video:
+							<a href="https://www.youtube.com/watch?v=TVV6RhmnHQU" target="_blank">
+							<br>
+							<img src="obrazy/statystyki/onestep.png">
+							<br>
+                                <small>Onestep - Blue of the Charity</small>
+							</a>
+							<br>
+							(19 III 2019)
+						</li>
+					</div>
+                    <div class="breaker"></div>
+                    <a>Kraj pochodzenia: Nowa Zelandia</a>
+                    <a>Typ kanału: muzyka</a>
+                    <a>Liczba zuploudowanych filmów: 938</a>
+                <img src="obrazy/statystyki/statystyki1.png" alt="statystyki">
+                <img src="obrazy/statystyki/statystyki2.png" alt="statystyki">
+                <img src="obrazy/statystyki/statystyki3.png" alt="statystyki">
+            </div>
+            <div class="info" id="artysci">
+                <h2>Lista artystów</h2>
+				<p>Według <a href="https://youtube.fandom.com/wiki/MontageRock" target="_blank">Wikitubii</a>(fanowskiej wikipedii na temat kanałów na Youtube) Montage Rock współpracuje z 131 zespołami rockowymi z całego świata. Do najbardziej znanych należą:</p>
+				<br>
+                    <li>The Wreckage</li>
+                    <li>The Paper Melody</li>
+					<li>Burn The Rez</li>
+					<li>Dope</li>
+					<li>Cenacle</li>
+					<li>Cult to Follow</li>
+					<li>Dear Agony</li>
+					<li>Hollow Point Heroes</li>
+					<li>Onlap</li>
+					<li>Papercut Massacre</li>
+					<li>Down in Ashes</li>
+            </div>
+            <h2>Galeria zdjęć</h2>
+            <div class="info" id="galeria">
+                <img src="obrazy/galeria/galeria1.jpg">
+                <img src="obrazy/galeria/galeria2.jpg">
+                <img src="obrazy/galeria/galeria3.jpg">
+				 <div class="breaker"></div>
+                <img src="obrazy/galeria/galeria4.jpg">
+                <img src="obrazy/galeria/galeria5.jpg">
+                <img src="obrazy/galeria/galeria6.jpg">
+                <div class="breaker"></div>
+            </div>
+            <div class="info" id="zespol">
+                <h2>Ulubiony zespół - Cult to Follow</h2>
+				<h3>Krótkie info</h3>
+				<p>Cult To Follow jest to amerykański zespół rockowy stworzony przez piosenkarza Bryana W. Scotta (jego inne projekty to Union Underground & Into The Fire)</p><br>
+				<h3>Albumy</h3>
+				<div class="album">
+					<img src="obrazy/zespol/inception.jpg" alt="Inception" onmouseover="album1_start()" onmouseout="album1_stop()">
+					<br>
+					<small>Album - Inception</small>
+				</div>
+				<div class="album">
+					<img src="obrazy/zespol/instrumentals.jpg" alt="Instrumentals" onmouseover="album2_start()" onmouseout="album2_stop()">
+					<br>
+					<small>Album - Instrumentals</small>
+				</div>
+				<div class="breaker"></div>
+				<h3>Utwory</h3>
+				<div class="utwory">
+					<img src="obrazy/zespol/10_seconds_from_panic.jpg" alt="Instrumentals" onmouseover="ctf1_start()" onmouseout="ctf1_stop()">
+					<br>
+					<small>10 Seconds to Panic</small>
+				</div>
+				<div class="utwory">
+                    <img src="obrazy/zespol/dead_and_gone.jpg" alt="Instrumentals" onmouseover="ctf2_start()" onmouseout="ctf2_stop()">
+					<br>
+					<small>Dead and Gone</small>
+				</div>
+				<div class="utwory">
+                    <img src="obrazy/zespol/down.jpg" alt="Instrumentals" onmouseover="ctf3_start()" onmouseout="ctf3_stop()">
+					<br>
+					<small>Down</small>
+				</div>
+				<div class="utwory">
+                    <img src="obrazy/zespol/everything_i_never_was.jpg" alt="Instrumentals" onmouseover="ctf4_start()" onmouseout="ctf4_stop()">
+					<br>
+					<small>Everything I never was</small>
+				</div>
+				<div class="breaker"></div>
+				<div class="utwory">
+                    <img src="obrazy/zespol/leave_it_all_behind.jpg" alt="Instrumentals" onmouseover="ctf5_start()" onmouseout="ctf5_stop()">
+					<br>
+					<small>Leave it all behind</small>
+				</div>
+				<div class="utwory">
+                    <img src="obrazy/zespol/lies.jpg" alt="Instrumentals" onmouseover="ctf6_start()" onmouseout="ctf6_stop()">
+					<br>
+					<small>Lies</small>
+				</div>
+				<div class="utwory">
+                    <img src="obrazy/zespol/murder_melody.jpg" alt="Instrumentals" onmouseover="ctf7_start()" onmouseout="ctf7_stop()">
+					<br>
+					<small>Murder melody</small>
+				</div>
+				<div class="utwory">
+                    <img src="obrazy/zespol/perfect.jpg" alt="Instrumentals" onmouseover="ctf8_start()" onmouseout="ctf8_stop()">
+					<br>
+					<small>Perfect</small>
+				</div>
+				<div class="breaker"></div>
+				<div class="utwory" id="utwor9">
+                    <img src="obrazy/zespol/start_a_fire.jpg" alt="Instrumentals" onmouseover="ctf9_start()" onmouseout="ctf9_stop()">
+					<br>
+					<small>Start a Fire</small>
+				</div>
+				<div class="utwory" id="utwor10">
+                    <img src="obrazy/zespol/through_with_you.jpg" alt="Instrumentals" onmouseover="ctf10_start()" onmouseout="ctf10_stop()">
+					<br>
+					<small>Through with you</small>
+				</div>
+				<div class="breaker"></div>
+            </div>
+            <div class="info" id="special">
+                <h2>Montage Radio</h2>
+                <p>Montage Radio są to 4 filmy, które są tzw. specialami na okrąglą liczbę subskrybentów:</p><br>
+                <ul>
+                    <li>
+                        <p>Episode 1: 20.000</p>
+                    </li>
+                    <a href="https://www.youtube.com/watch?v=A7JgmP7-wtw" target="_blank">
+                        <img src="obrazy/MR/montage%20radio%2001.png" alt="Miniaturka Montage Radio Episode 1" onmouseover="wiadomosc1_start()" onmouseout="wiadomosc1_stop()">
+                    </a>
+                    <br>
+                    <br>
+                    <li>
+                        <p>Episode 2: 200.000</p>
+                    </li>
+                    <a href="https://www.youtube.com/watch?v=1I7FXzM9j6w" target="_blank">
+                        <img src="obrazy/MR/montage%20radio%2002.png" alt="Miniaturka Montage Radio Episode 2" onmouseover="wiadomosc2_start()" onmouseout="wiadomosc2_stop()">
+                    </a>
+                    <br>
+                    <br>
+                    <li>
+                        <p>Episode 3: 300.000 (+1000000 wyświetleń)</p>
+                    </li>
+                    <a href="https://www.youtube.com/watch?v=zPS-erMLLww" target="_blank">
+                        <img src="obrazy/MR/montage%20radio%2003.png" alt="Miniaturka Montage Radio Episode 3" onmouseover="wiadomosc3_start()" onmouseout="wiadomosc3_stop()">
+                    </a>
+                      <br>
+                    <li>
+                        <p>Episode 4: 500.000</p>
+                    </li>
+                    <a href="https://www.youtube.com/watch?v=gwL4IZHrxR4" target="_blank">
+                        <img src="obrazy/MR/montage%20radio%2004.png" alt="Miniaturka Montage Radio Episode 4" onmouseover="wiadomosc4_start()" onmouseout="wiadomosc4_stop()">
+                    </a>
+                    <br>
+                </ul>
+            </div>
+        </main>
+        
+        <div id="fanpage">
+            <span class="handle">Facebook</span>
+            
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmontagerockofficial%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            
+        </div>
+        
+        <div id="kolory">
+            <span class="handle">Kolory tekstu</span>
+            
+            <input type="button" value="Czerwony!" id="red">
+            <br>
+            <input type="button" value="Niebieski!" id="blue">
+            <br>
+            <input type="button" value="Zielony!" id="green">
+            <br>
+            <input type="button" value="Pomarańczowy!" id="orange">
+            <br>
+            <input type="button" value="Fioletowy!" id="purple">
+            <br>
+            <input type="button" value="Szary!" id="gray">
+            <br>
+            <input type="button" value="Powrót!" id="white">
+            <br>
+        </div>
+        
+        <div id="gierki">
+            <span class="handle">Gierki</span>
+            
+            <a href="gierki/wisielec/szubienica.html"><input type="button" value="Wisielec!" id="wisielec"></a>
+            <br>
+            <a href="gierki/memory/gra.html"><input type="button" value="Memory!" id="memory"></a>
+            <br>
+        </div>
+        
+        <script src="skrypty/jquery-3.3.1.min.js"></script>
+        <script src="skrypty/jquery.tabSlideOut.js"></script>
+        <script src="skrypty/slide.js"></script>
+        
+        <script>
+            $('#fanpage').tabSlideOut({
+                tabLocation:'right',
+                action:'click',
+                offset:'100px'
+            });
+            
+            $('#kolory').tabSlideOut({
+                tabLocation:'right',
+                action:'click',
+                offset:'300px' 
+            });
+            
+            $('#gierki').tabSlideOut({
+                tabLocation:'right',
+                action:'click',
+                offset:'550px' 
+            });
+            
+            $('#red').click(function(){
+                $('body').css("color", "red");
+            });
+            $('#blue').click(function(){
+                $('body').css("color", "aqua");
+            });
+            $('#green').click(function(){
+                $('body').css("color", "green");
+            });
+            $('#orange').click(function(){
+                $('body').css("color", "orange");
+            });
+            $('#purple').click(function(){
+                $('body').css("color", "purple");
+            });
+            $('#gray').click(function(){
+                $('body').css("color", "gray");
+            });
+            $('#white').click(function(){
+                $('body').css("color", "white");
+            });
+            
+            $("#tlo").prop("volume", 0.3);
+        </script>
+        
+        <footer>
+            <a href="https://www.facebook.com/montagerockofficial/" target="_blank">
+                <img src="obrazy/social/facebook.png" alt="Logo Facebook">
+            </a>
+            <a href="https://www.instagram.com/montagerockofficial/" target="_blank">
+                <img src="obrazy/social/instagram.png" alt="Logo Instagram">
+            </a>
+            <a href="https://www.youtube.com/channel/UCaNDOP6JTcgWz59vNW129cA" target="_blank">
+                    <img src="obrazy/social/youtube.png" alt="Logo Youtube">
+            </a>
+            <a href="https://twitter.com/MontageRock" target="_blank">
+                    <img src="obrazy/social/twitter.png" alt="Logo Twitter">
+            </a>
+            <a href="https://open.spotify.com/user/montagerockofficial" target="_blank">
+                    <img src="obrazy/social/spotify.png" alt="Logo Spotify">
+            </a>
+            <a href="https://discordapp.com/invite/3KQevVf" target="_blank">
+                    <img src="obrazy/social/discord.png" alt="Logo Discord">
+            </a>
+            <a href="https://www.twitch.tv/montagerockgames" target="_blank">
+                    <img src="obrazy/social/twitch.png" alt="Logo Twitch">
+            </a>
+            <a href="https://soundcloud.com/montagerock" target="_blank">
+                <img src="obrazy/social/soundcloud.png" alt="Logo Soundcloud">
+            </a>
+            <p>&copy; Adam Bieszk 2019</p>
+        </footer>
+        <script src="skrypty/muzyka.js"></script>
+        <script src="skrypty/zegar.js"></script>
+        <div id="up" onclick="klik()">
+            <a href="#header"><img src="obrazy/strzałka.png"></a>
+	</div>
+    </body>
+</html>
