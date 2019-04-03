@@ -1,4 +1,4 @@
-var haslo = "Then the sky opened up and swallowed the whole";
+var haslo = "Then the sky opened up and swallowed them whole";
 haslo = haslo.toUpperCase();
 
 var dlugosc = haslo.length;
