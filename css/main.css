@@ -1,21 +1,21 @@
 * {
     box-sizing: border-box;
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    
+
 }
 
 body {
     margin: 0;
     font-family: Arial;
     font-size: 24px;
-    //background-image: url(../obrazy/tlo.jpg);
+    background-image: url(../obrazy/binding_dark.png); /* Background pattern from Toptal Subtle Patterns */
     //background-repeat: round;
-	background-color: black;
+    background-color: black;
     color: white;
     font-family: Verdana, sans-serif;
-	cursor: url(../obrazy/default.cur), default;
+    cursor: url(../obrazy/default.cur), default;
 }
 
 #logo_strony {
@@ -24,14 +24,14 @@ body {
 }
 
 header h1 {
-	font-size: 41px;
-	letter-spacing: 3px;
-	text-align: center;
+    font-size: 41px;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 header #cooltext {
-	width: 965px;
-	height: 120px;
+    width: 965px;
+    height: 120px;
 }
 
 .text {
@@ -52,29 +52,40 @@ header #cooltext {
 }
 
 .fade img:hover {
-	background-image: url(../obrazy/artysci/alesti.jpg);
-	z-index: 5;
+    background-image: url(../obrazy/artysci/alesti.jpg);
+    z-index: 5;
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
+    .text {
+        font-size: 11px
+    }
 }
 
 .slideshow-container {
-	max-width: 1000px;
-	width: 100%
-	position: relative;
-	margin: auto;
+    max-width: 1000px;
+    width: 100% position: relative;
+    margin: auto;
 }
 
 header img {
@@ -96,7 +107,7 @@ header h1 {
     float: left;
 }
 
-#menu a{
+#menu a {
     float: left;
     width: 200px;
     //height: 200px;
@@ -111,34 +122,47 @@ header h1 {
     height: 200px;
     border: 3px solid gold;
     transition: all .3s ease-in-out;
-	cursor: url(../obrazy/pointer.cur), pointer;
+    cursor: url(../obrazy/pointer.cur), pointer;
     background-repeat: round;
 }
 
 ul a img {
-	width: 320px;
-	margin-left: auto;
-	margin-right: auto;
-	cursor: url(../obrazy/pointer.cur), pointer;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: url(../obrazy/pointer.cur), pointer;
 }
 
-#menu1:hover { 
-    background-image: url(../obrazy/menu/info.png); 
+#menu1:hover {
+    background-image: url(../obrazy/menu/info.png);
 }
+
 #menu2:hover {
-    background-image: url(../obrazy/menu/statystyki.jpg); 
+    background-image: url(../obrazy/menu/statystyki.jpg);
 }
-#menu3:hover { background-image: url(../obrazy/menu/artysta.png); }
-#menu4:hover { background-image: url(../obrazy/menu/galeria.jpg); }
-#menu5:hover { background-image: url(../obrazy/menu/culttofollow.jpg); }
-#menu6:hover { background-image: url(../obrazy/menu/LogoMR.png); }
+
+#menu3:hover {
+    background-image: url(../obrazy/menu/kapela.jpg);
+}
+
+#menu4:hover {
+    background-image: url(../obrazy/menu/galeria.jpg);
+}
+
+#menu5:hover {
+    background-image: url(../obrazy/menu/ytmusic.jpg);
+}
+
+#menu6:hover {
+    background-image: url(../obrazy/menu/LogoMR.png);
+}
 
 .content {
     padding: 16px;
 }
 
 .info {
-border: solid 3px red;
+    border: solid 3px red;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -146,15 +170,15 @@ border: solid 3px red;
 }
 
 .icon-bar a {
-  text-align: center;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
 }
 
 .icon-bar a:hover {
-  background-color: #000;
-  cursor: url(../obrazy/pointer.cur), pointer;
+    background-color: #000;
+    cursor: url(../obrazy/pointer.cur), pointer;
 }
 
 #statystyki img {
@@ -166,48 +190,54 @@ border: solid 3px red;
     width: 900px;
     height: 600px;
     transition: .3s;
-	cursor: url(../obrazy/pointer.cur), pointer;
+    cursor: url(../obrazy/pointer.cur), pointer;
 }
 
 #statystyki ul li {
-	color: aqua;
+    color: aqua;
 }
+
 #tlo {
     width: 100%;
     background-color: #f3f2f7;
     border-radius: 15px;
 }
+
 footer a {
     cursor: url(../obrazy/pointer.cur), pointer;
 }
 
 .audio[controls] {
-		cursor: url(../obrazy/default.cur), default;
+    cursor: url(../obrazy/default.cur), default;
 }
+
 .video {
-	float: left;
-	border: solid 1px white;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    border: solid 1px white;
     text-align: center;
 }
+
 h2 {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
-} 
+}
 
 .album {
-	float: left;
+    float: left;
     margin: 25px 150px;
 }
 
 h3 {
-	font-weight: bold;
-	font-size: 32px;
-	text-decoration: underline;
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: underline;
 }
 
 .utwory {
-	float: left;
+    float: left;
     margin: 25px 10px;
 }
 
@@ -227,13 +257,27 @@ h3 {
 }
 
 #up {
-position: fixed;
-bottom: 0;
-right: 0;
-width: 300px;
-z-index: -1;
-cursor: url(../obrazy/pointer.cur), pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 0.75;
+    padding: 0;
+    cursor: url(../obrazy/pointer.cur), pointer;
 }
+
 .breaker {
     clear: both;
+}
+
+table {
+    text-align: center;
+    margin: 20px auto;
+}
+
+table tbody td {
+    border: solid 1px red;
+}
+
+table thead td {
+    border: solid 2px red;
 }
