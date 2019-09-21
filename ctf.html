@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/webkit.css">
+    <link rel="stylesheet" href="css/jquery.tabSlideOut.css">
+</head>
+
+<body>
+
+    <audio id="album1" class="audio">
+        <source src="muzyka/ctl/inception.mp3" type="audio/mpeg">
+        Twoja przeglądarka nie wspiera znacznika audio
+    </audio>
+
+    <audio id="album2" class="audio">
+        <source src="muzyka/ctl/instrumentals.mp3" type="audio/mpeg">
+        Twoja przeglądarka nie wspiera znacznika audio
+    </audio>
+
+    <audio class="audio" id="ctf1">
+        <source src="muzyka/ctl/10%20seconds%20from%20panic.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf2">
+        <source src="muzyka/ctl/dead%20and%20gone.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf3">
+        <source src="muzyka/ctl/down.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf4">
+        <source src="muzyka/ctl/everything%20i%20never%20was.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf5">
+        <source src="muzyka/ctl/leave%20it%20all%20behind.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf6">
+        <source src="muzyka/lies.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf7">
+        <source src="muzyka/ctl/murder%20melody.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf8">
+        <source src="muzyka/ctl/perfect.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf9">
+        <source src="muzyka/ctl/start%20a%20fire.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio" id="ctf10">
+        <source src="muzyka/ctl/through%20with%20you.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <div class="info" id="zespol">
+        <h2>Ulubiony zespół - Cult to Follow</h2>
+        <h3>Krótkie info</h3>
+        <p>Cult To Follow jest to amerykański zespół rockowy stworzony przez piosenkarza Bryana W. Scotta (jego inne projekty to Union Underground & Into The Fire)</p><br>
+        <h3>Albumy</h3>
+        <div class="album">
+            <img src="obrazy/zespol/inception.jpg" alt="Inception" onmouseover="album1_start()" onmouseout="album1_stop()">
+            <br>
+            <small>Album - Inception</small>
+        </div>
+        <div class="album">
+            <img src="obrazy/zespol/instrumentals.jpg" alt="Instrumentals" onmouseover="album2_start()" onmouseout="album2_stop()">
+            <br>
+            <small>Album - Instrumentals</small>
+        </div>
+        <div class="breaker"></div>
+        <h3>Utwory</h3>
+        <div class="utwory">
+            <img src="obrazy/zespol/10_seconds_from_panic.jpg" alt="Instrumentals" onmouseover="ctf1_start()" onmouseout="ctf1_stop()">
+            <br>
+            <small>10 Seconds to Panic</small>
+        </div>
+        <div class="utwory">
+            <img src="obrazy/zespol/dead_and_gone.jpg" alt="Instrumentals" onmouseover="ctf2_start()" onmouseout="ctf2_stop()">
+            <br>
+            <small>Dead and Gone</small>
+        </div>
+        <div class="utwory">
+            <img src="obrazy/zespol/down.jpg" alt="Instrumentals" onmouseover="ctf3_start()" onmouseout="ctf3_stop()">
+            <br>
+            <small>Down</small>
+        </div>
+        <div class="utwory">
+            <img src="obrazy/zespol/everything_i_never_was.jpg" alt="Instrumentals" onmouseover="ctf4_start()" onmouseout="ctf4_stop()">
+            <br>
+            <small>Everything I never was</small>
+        </div>
+        <div class="breaker"></div>
+        <div class="utwory">
+            <img src="obrazy/zespol/leave_it_all_behind.jpg" alt="Instrumentals" onmouseover="ctf5_start()" onmouseout="ctf5_stop()">
+            <br>
+            <small>Leave it all behind</small>
+        </div>
+        <div class="utwory">
+            <img src="obrazy/zespol/lies.jpg" alt="Instrumentals" onmouseover="ctf6_start()" onmouseout="ctf6_stop()">
+            <br>
+            <small>Lies</small>
+        </div>
+        <div class="utwory">
+            <img src="obrazy/zespol/murder_melody.jpg" alt="Instrumentals" onmouseover="ctf7_start()" onmouseout="ctf7_stop()">
+            <br>
+            <small>Murder melody</small>
+        </div>
+        <div class="utwory">
+            <img src="obrazy/zespol/perfect.jpg" alt="Instrumentals" onmouseover="ctf8_start()" onmouseout="ctf8_stop()">
+            <br>
+            <small>Perfect</small>
+        </div>
+        <div class="breaker"></div>
+        <div class="utwory" id="utwor9">
+            <img src="obrazy/zespol/start_a_fire.jpg" alt="Instrumentals" onmouseover="ctf9_start()" onmouseout="ctf9_stop()">
+            <br>
+            <small>Start a Fire</small>
+        </div>
+        <div class="utwory" id="utwor10">
+            <img src="obrazy/zespol/through_with_you.jpg" alt="Instrumentals" onmouseover="ctf10_start()" onmouseout="ctf10_stop()">
+            <br>
+            <small>Through with you</small>
+        </div>
+        <div class="breaker"></div>
+    </div>
+    <div id="fanpage">
+        <span class="handle">Facebook</span>
+
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmontagerockofficial%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+    </div>
+
+    <div id="kolory">
+        <span class="handle">Kolory tekstu</span>
+
+        <input type="button" value="Czerwony!" id="red">
+        <br>
+        <input type="button" value="Niebieski!" id="blue">
+        <br>
+        <input type="button" value="Zielony!" id="green">
+        <br>
+        <input type="button" value="Pomarańczowy!" id="orange">
+        <br>
+        <input type="button" value="Fioletowy!" id="purple">
+        <br>
+        <input type="button" value="Szary!" id="gray">
+        <br>
+        <input type="button" value="Powrót!" id="white">
+        <br>
+    </div>
+
+    <div id="gierki">
+        <span class="handle">Gierki</span>
+
+        <a href="gierki/wisielec/szubienica.html"><button>Wisielec!</button></a>
+        <br>
+        <a href="gierki/memory/gra.html"><button>Memory!</button></a>
+        <br>
+    </div>
+
+    <script src="skrypty/jquery-3.3.1.min.js"></script>
+    <script src="skrypty/jquery.tabSlideOut.js"></script>
+    <script src="skrypty/slide.js"></script>
+    <script src="skrypty/jquery.js"></script>
+    <script src="skrypty/muzyka.js"></script>
+
+</body></html>
