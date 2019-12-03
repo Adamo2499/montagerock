@@ -223,6 +223,7 @@ h2 {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
+    text-decoration: underline;
 }
 
 .album {
