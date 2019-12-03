@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/webkit.css">
     <link rel="stylesheet" href="css/jquery.tabSlideOut.css">
     <link rel="icon" href="obrazy/favicon-16x16.png">
@@ -94,12 +93,11 @@
         </canvas>
         <div class="breaker"></div>
     </header>
-    <!--
-    <img src="obrazy/baner.png" alt="Twoje źródło podziemnego rocka!" style="width: 100%">
-    -->
-    <blockquote>Your source of underground rock</blockquote>
+    <!--<img src="obrazy/baner.png" alt="Twoje źródło podziemnego rocka!" style="width: 100%">-->
+    <blockquote>Your source of underground rock!</blockquote>
+    <br>
     <audio autoplay loop preload="auto" class="audio" id="tlo">
-        <source src="muzyka/lies.mp3" type="audio/mpeg">
+        <source src="https://www.youtube.com/watch?v=1I7FXzM9j6w" type="audio/mpeg">
         Twoja przeglądarka nie wspiera znacznika audio
     </audio>
     <div class="slideshow-container">
@@ -136,7 +134,7 @@
     </div>
     <main>
         <h2>Menu</h2>
-        <div id="menu">
+        <nav id="menu">
             <a href="#podstawy" id="menu1" onclick="klik()" title="Podstawowe informacje"></a>
             <a href="#statystyki" id="menu2" onclick="klik()" title="Statystyki"></a>
             <a href="#artysci" id="menu3" onclick="klik()" title="Artyści"></a>
@@ -144,11 +142,11 @@
             <a href="#galeria" id="menu4" onclick="klik()" title="Galeria zdjęć"></a>
             <a href="#kanaly" id="menu5" onclick="klik()" title="Inne kanały muzyczne"></a>
             <a href="#special" id="menu6" onclick="klik()" title="Montage Radio"></a>
-        </div>
+        </nav>
         <div class="breaker"></div>
         <div class="info" id="podstawy">
             <h2>Podstawowe informacje</h2>
-            <p>Montage Rock jest to kanał na YouTube, który publikuje tylko muzykę, a konkretnie to wolną od praw autorskich muzykę rockową oraz metalową. Kanał działa od 2012r.</p>
+            <p>Montage Rock jest to kanał na YouTube, który publikuje wolną od praw autorskich muzykę rockową oraz metalową. Kanał działa od 2012r.</p>
         </div>
         <div class="info" id="statystyki">
             <h2>Garść statystyk</h2>
@@ -319,7 +317,8 @@
     <script src="skrypty/slide.js"></script>
     <script src="skrypty/jquery.js"></script>
 
-    <footer>
+    <section id="social">
+        <h2>Social media </h2>
         <a href="https://www.facebook.com/montagerockofficial/" target="_blank">
             <img src="obrazy/social/facebook.png" alt="Logo Facebook">
         </a>
@@ -344,6 +343,9 @@
         <a href="https://soundcloud.com/montagerock" target="_blank">
             <img src="obrazy/social/soundcloud.png" alt="Logo Soundcloud">
         </a>
+    </section>
+        
+    <footer>
         <p>&copy; Adam Bieszk 2019</p>
     </footer>
     <script src="skrypty/muzyka.js"></script>
